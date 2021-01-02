@@ -1,0 +1,19 @@
+import random
+first_name = str(input("Please enter your name: "))
+second_name = str(input("Please enter your crush's name: "))
+random_number = random.randint(0, 100)
+print(first_name + " & " + second_name + "'s love match is " + str(random_number) + "%")
+if random_number <= 50:
+    print("Sorry, you were not meant to be. Try another match.")
+
+elif 70 <= random_number > 50:
+    print("You could be a perfect match if you work on communication.")
+
+elif 80 <= random_number > 70:
+    print("You are a good match!")
+
+elif 90 <= random_number > 95:
+    print("You are a great match!")
+
+else:
+    print("A match made in heaven! Your love story is one for the books!")
